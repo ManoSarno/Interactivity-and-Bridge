@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-width {
+  padding-left: calc((100vw - 855px)/2) !important;
+  padding-right: calc((100vw - 855px)/2) !important;
+  width: 855px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px 0;
+}
+
+.header-div h1 {
+  width: 70%;
+  font-size: 48px;
+  font-style: italic;
+  color: red;
+  padding: 0;
+}
+
+.header-div ul {
+  width: 30%;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-div li a, footer li a {
+  color: red;
+}
+
+main {
+  display: flex;
+  padding: 30px 0;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+}
+
+.comment-input p {
+  font-size: 18px;
+}
+
+.comment-input div {
+  display: flex;
+  gap: 4px;
+}
+
+.comment-input input {
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  width: 80%;
+}
+
+.comment-input button {
+  background: green;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 4px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments p {
+  padding: 8px 4px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.comments p:nth-child(even) {
+  background: lavender;
+}
+
+.comments p:nth-child(odd) {  
+  background: gainsboro;
+}
+
+.tabs a span {
+  display: inline-block;
+  border-radius: 5px 5px 0 0;
+  width: 100px;
+  margin-right: 10px;
+  text-align: center;
+  background: #ddd;
+  padding: 5px;
+}
+
+.tabs a span.active, .content {
+  background: #eee;
+}
+
+.content {
+  padding: 20px 8px;
+  border-radius: 5px;
+}
+
+.content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content li {
+  padding: 4px 8px;
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+footer {
+  background: yellow;
+  padding: 50px 0 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div {
+  width: 30%;
+}
+
+footer ul {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+footer p {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+footer li {
+  font-size: 15px;
+  margin: 0 0 4px 0;
+}
+
+footer .title {
+  color: red;
+  font-style: italic;
+}
+
+footer .link {
+  font-weight: 700;
+  color: red;
+}
+
+
+
+
