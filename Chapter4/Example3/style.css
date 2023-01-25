@@ -6,7 +6,8 @@
 .page-width {
   padding-left: calc((100vw - 855px)/2) !important;
   padding-right: calc((100vw - 855px)/2) !important;
-  width: 855px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 li {
@@ -51,13 +52,20 @@ main {
   padding: 30px 0;
 }
 
+.tabs {
+  display: flex;
+}
+
 .tabs a span {
   display: inline-block;
   border-radius: 5px 5px 0 0;
   width: 100px;
+  max-width: calc((100vw - 82px)/3);
   margin-right: 10px;
   text-align: center;
   background: #ddd;
+  color: red;
+  font-weight: 700;
   padding: 5px;
 }
 
@@ -78,19 +86,51 @@ main {
 
 .content li {
   padding: 4px 8px;
-  background: gainsboro;
+  background: #eff;
   border-radius: 5px;
+}
+
+.content div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.content input {
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  width: 200px;
+  margin-right: 4px;
+  border-radius: 4px;
+  border-color: #ccc;
+}
+
+.content button {
+  background: #ccc;
+  color: black;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 900;
+  padding: 4px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 footer {
   background: yellow;
   padding: 50px 0 80px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 footer div {
   width: 30%;
+  min-width: 180px;
 }
 
 footer ul {
@@ -121,6 +161,18 @@ footer .link {
   color: red;
 }
 
+@media screen and (max-width: 955px) {
+  .page-width {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .page-width {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
 
 
